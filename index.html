@@ -34,11 +34,13 @@ function vld() {
 		let vtal = reaverTalent[Math.floor(Math.random() * reaverTalent.length)];
 		do {
 			if ((vtal === 'Assassination' || vtal === 'Agility') && (vprim === 'Sweeping Kick')) {
-				let valid = false;
-				let vspec = reaverSpecial[Math.floor(Math.random() * reaverSpecial.length)];
-				let vprim = reaverPrimary[Math.floor(Math.random() * reaverPrimary.length)];
-				let vsec = reaverSecondary[Math.floor(Math.random() * reaverSecondary.length)];
-				let vtal = reaverTalent[Math.floor(Math.random() * reaverTalent.length)];
+				valid = false;
+				vspec = reaverSpecial[Math.floor(Math.random() * reaverSpecial.length)];
+				vprim = reaverPrimary[Math.floor(Math.random() * reaverPrimary.length)];
+				vsec = reaverSecondary[Math.floor(Math.random() * reaverSecondary.length)];
+				vtal = reaverTalent[Math.floor(Math.random() * reaverTalent.length)];
+			} else {
+				valid = true;
 				}
 			} while (valid === false);
 		alert(vcls + ' || '+ vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
@@ -67,12 +69,14 @@ function vld() {
 		let vtal = sentinelTalent[Math.floor(Math.random() * sentinelTalent.length)];
 		do {
  			if (vtal === 'Killing Spree' && vspec === 'Sonic Boom'){
- 			let valid = false;
- 			let vspec = sentinelSpecial[Math.floor(Math.random() * sentinelSpecial.length)];
- 	 		let vprim = sentinelPrimary[Math.floor(Math.random() * sentinelPrimary.length)];
- 	 		let vsec = sentinelSecondary[Math.floor(Math.random() * sentinelSecondary.length)];
- 	 		let vtal = sentinelTalent[Math.floor(Math.random() * sentinelTalent.length)];
- 			}
+ 			valid = false;
+ 			vspec = sentinelSpecial[Math.floor(Math.random() * sentinelSpecial.length)];
+ 	 		vprim = sentinelPrimary[Math.floor(Math.random() * sentinelPrimary.length)];
+ 	 		vsec = sentinelSecondary[Math.floor(Math.random() * sentinelSecondary.length)];
+ 	 		vtal = sentinelTalent[Math.floor(Math.random() * sentinelTalent.length)];
+		} else {
+			valid = true;
+			}
  		} while (valid === false);
 		alert(vcls + ' || '+ vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
 
@@ -88,11 +92,13 @@ function vld() {
 		let vtal = deceiverTalent[Math.floor(Math.random() * deceiverTalent.length)];
 	 	do {
 				if ((vtal === 'Split Personalities' && vsec !== 'Illusions') || (vtal == 'Virulent Strain' && vprim !== 'Infect')){
-				let valid = false;
-				let vspec = deceiverSpecial[Math.floor(Math.random() * deceiverSpecial.length)];
-				let vprim = deceiverPrimary[Math.floor(Math.random() * deceiverPrimary.length)];
-				let vsec = deceiverSecondary[Math.floor(Math.random() * deceiverSecondary.length)];
-				let vtal = deceiverTalent[Math.floor(Math.random() * deceiverTalent.length)];
+				valid = false;
+				vspec = deceiverSpecial[Math.floor(Math.random() * deceiverSpecial.length)];
+				vprim = deceiverPrimary[Math.floor(Math.random() * deceiverPrimary.length)];
+				vsec = deceiverSecondary[Math.floor(Math.random() * deceiverSecondary.length)];
+				vtal = deceiverTalent[Math.floor(Math.random() * deceiverTalent.length)];
+			} else {
+				valid = true;
 				}
 		} while (valid === false);
 		alert(vcls + ' || '+ vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
@@ -127,11 +133,13 @@ function vld() {
 		let ht = hunterTalent[Math.floor(Math.random() * hunterTalent.length)];
 		do {
 			if (ht === 'Demolitionist' && (hs === 'Barrage' || hs === 'Blinding Shot')) {
-			let valid = false;
-			let hw = hunterWeapon[Math.floor(Math.random() * hunterWeapon.length)];
-			let hp = hunterPrimary[Math.floor(Math.random() * hunterPrimary.length)];
-			let hs = hunterSecondary[Math.floor(Math.random() * hunterSecondary.length)];
-			let ht = hunterTalent[Math.floor(Math.random() * hunterTalent.length)];
+			valid = false;
+			hw = hunterWeapon[Math.floor(Math.random() * hunterWeapon.length)];
+			hp = hunterPrimary[Math.floor(Math.random() * hunterPrimary.length)];
+			hs = hunterSecondary[Math.floor(Math.random() * hunterSecondary.length)];
+			ht = hunterTalent[Math.floor(Math.random() * hunterTalent.length)];
+		} else {
+			valid = true;
 			}
 		} while (valid === false);
 		alert(hcls+' || '+hw+' || '+hp+' || '+hs+' || '+ht);
@@ -148,12 +156,14 @@ function vld() {
 		let ht = alchemistTalent[Math.floor(Math.random() * alchemistTalent.length)];
 		do {
 			if ((ht === 'Disorienting Flash' && hp !== 'Sunlight Vial') || (ht === 'Restoring Flames' && (hs !== 'Fire Wall' || hs !== 'Flamethrower'))) {
-				let valid = false;
-				let hw = alchemistWeapon[Math.floor(Math.random() * alchemistWeapon.length)];
-				let hp = alchemistPrimary[Math.floor(Math.random() * alchemistPrimary.length)];
-				let hs = alchemistSecondary[Math.floor(Math.random() * alchemistSecondary.length)];
-				let ht = alchemistTalent[Math.floor(Math.random() * alchemistTalent.length)];
-			}
+				valid = false;
+				hw = alchemistWeapon[Math.floor(Math.random() * alchemistWeapon.length)];
+				hp = alchemistPrimary[Math.floor(Math.random() * alchemistPrimary.length)];
+				hs = alchemistSecondary[Math.floor(Math.random() * alchemistSecondary.length)];
+				ht = alchemistTalent[Math.floor(Math.random() * alchemistTalent.length)];
+			} else {
+				valid = true;
+				}
 		} while (valid === false);
 		alert(hcls+' || '+hw+' || '+hp+' || '+hs+' || '+ht);
 
@@ -169,11 +179,13 @@ function vld() {
 		let ht = scoutTalent[Math.floor(Math.random() * scoutTalent.length)];
 		do {
 			if ((ht === 'Barbed Tools(Slow)' || ht === 'Barbed Tools(Bleed)') && hs === 'Grappling Hook') {
-			let valid = false;
-			let hw = scoutWeapon[Math.floor(Math.random() * scoutWeapon.length)];
-			let hp = scoutPrimary[Math.floor(Math.random() * scoutPrimary.length)];
-			let hs = scoutSecondary[Math.floor(Math.random() * scoutSecondary.length)];
-			let ht = scoutTalent[Math.floor(Math.random() * scoutTalent.length)];
+			valid = false;
+			hw = scoutWeapon[Math.floor(Math.random() * scoutWeapon.length)];
+			hp = scoutPrimary[Math.floor(Math.random() * scoutPrimary.length)];
+			hs = scoutSecondary[Math.floor(Math.random() * scoutSecondary.length)];
+			ht = scoutTalent[Math.floor(Math.random() * scoutTalent.length)];
+		} else {
+			valid = true;
 			}
 		} while (valid === false);
 		alert(hcls+' || '+hw+' || '+hp+' || '+hs+' || '+ht);
@@ -190,18 +202,20 @@ function vld() {
 		let ht = prophetTalent[Math.floor(Math.random() * prophetTalent.length)];
 		do {
 			if (ht === 'Empowering Curse' && hp === 'Hex Shot'){
-			let valid = false;
-			let hw = prophetWeapon[Math.floor(Math.random() * prophetWeapon.length)];
-			let hp = prophetPrimary[Math.floor(Math.random() * prophetPrimary.length)];
-			let hs = prophetSecondary[Math.floor(Math.random() * prophetSecondary.length)];
-			let ht = prophetTalent[Math.floor(Math.random() * prophetTalent.length)];
-			}
+			valid = false;
+			hw = prophetWeapon[Math.floor(Math.random() * prophetWeapon.length)];
+			hp = prophetPrimary[Math.floor(Math.random() * prophetPrimary.length)];
+			hs = prophetSecondary[Math.floor(Math.random() * prophetSecondary.length)];
+			ht = prophetTalent[Math.floor(Math.random() * prophetTalent.length)];
+		} else {
+			valid = true;
+		}
 	} while (valid === false);
 	alert(hcls+' || '+hw+' || '+hp+' || '+hs+' || '+ht);
 
 	} else if(hcls === 'Vanguard') {
 		let valid = true;
-		let vanguardWeapon = Array('Kama', 'Waraxe', 'Splitter Hatcher', 'Impaler Axe');
+		let vanguardWeapon = Array('Kama', 'Waraxe', 'Splitter Hatchet', 'Impaler Axe');
 		let vanguardPrimary = Array('Shield Bash', 'Shield Charge', 'Judgement');
 		let vanguardSecondary = Array('Bulwark', 'Rousing Cry');
 		let vanguardTalent = Array('Additional Arms', 'Indomitable', 'Resilient Presence', 'Strongarm', 'Tidal Blessing', 'Toughness', 'Spiked Shield', 'Stout Shield', 'Improved Landing', 'Improved Sprint');
@@ -211,12 +225,14 @@ function vld() {
 		let ht = vanguardTalent[Math.floor(Math.random() * vanguardTalent.length)];
 		do {
 			if (ht === 'Stout Shield' && hp === 'Judgement'){
-			let valid = false;
-			let hw = vanguardWeapon[Math.floor(Math.random() * vanguardWeapon.length)];
-			let hp = vanguardPrimary[Math.floor(Math.random() * vanguardPrimary.length)];
-			let hs = vanguardSecondary[Math.floor(Math.random() * vanguardSecondary.length)];
-			let ht = vanguardTalent[Math.floor(Math.random() * vanguardTalent.length)];
-			}
+			valid = false;
+			hw = vanguardWeapon[Math.floor(Math.random() * vanguardWeapon.length)];
+			hp = vanguardPrimary[Math.floor(Math.random() * vanguardPrimary.length)];
+			hs = vanguardSecondary[Math.floor(Math.random() * vanguardSecondary.length)];
+			ht = vanguardTalent[Math.floor(Math.random() * vanguardTalent.length)];
+		} else {
+			valid = true;
+		}
 		} while(valid === false);
 		alert(hcls+' || '+hw+' || '+hp+' || '+hs+' || '+ht);
 
@@ -248,12 +264,14 @@ function hunterld() {
 	let ht = hunterTalent[Math.floor(Math.random() * hunterTalent.length)];
 	do {
 		if (ht === 'Demolitionist' && (hs === 'Barrage' || hs === 'Blinding Shot')) {
-		let valid = false;
-		let hw = hunterWeapon[Math.floor(Math.random() * hunterWeapon.length)];
-		let hp = hunterPrimary[Math.floor(Math.random() * hunterPrimary.length)];
-		let hs = hunterSecondary[Math.floor(Math.random() * hunterSecondary.length)];
-		let ht = hunterTalent[Math.floor(Math.random() * hunterTalent.length)];
-		}
+		valid = false;
+		hw = hunterWeapon[Math.floor(Math.random() * hunterWeapon.length)];
+		hp = hunterPrimary[Math.floor(Math.random() * hunterPrimary.length)];
+		hs = hunterSecondary[Math.floor(Math.random() * hunterSecondary.length)];
+		ht = hunterTalent[Math.floor(Math.random() * hunterTalent.length)];
+	} else {
+		valid = true;
+	}
 	} while (valid === false);
 	alert(hw+' || '+hp+' || '+hs+' || '+ht);
 }
@@ -269,12 +287,14 @@ function alchemistld() {
 	let hs = alchemistSecondary[Math.floor(Math.random() * alchemistSecondary.length)];
 	let ht = alchemistTalent[Math.floor(Math.random() * alchemistTalent.length)];
 	do {
-		if ((ht === 'Disorienting Flash' && hp !== 'Sunlight Vial') || (ht === 'Restoring Flames' && (hs !== 'Fire Wall' || hs !== 'Flamethrower'))) {
-			let valid = false;
-			let hw = alchemistWeapon[Math.floor(Math.random() * alchemistWeapon.length)];
-			let hp = alchemistPrimary[Math.floor(Math.random() * alchemistPrimary.length)];
-			let hs = alchemistSecondary[Math.floor(Math.random() * alchemistSecondary.length)];
-			let ht = alchemistTalent[Math.floor(Math.random() * alchemistTalent.length)];
+		if ((ht === 'Disorienting Flash' && hp !== 'Sunlight Vial') || (ht === 'Restoring Flames' && (hs !== 'Fire Wall' && hs !== 'Flamethrower'))) {
+			valid = false;
+			hw = alchemistWeapon[Math.floor(Math.random() * alchemistWeapon.length)];
+			hp = alchemistPrimary[Math.floor(Math.random() * alchemistPrimary.length)];
+			hs = alchemistSecondary[Math.floor(Math.random() * alchemistSecondary.length)];
+			ht = alchemistTalent[Math.floor(Math.random() * alchemistTalent.length)];
+		} else {
+			valid = true;
 		}
 	} while (valid === false);
 	alert(hw+' || '+hp+' || '+hs+' || '+ht);
@@ -292,12 +312,14 @@ function scoutld() {
 	let ht = scoutTalent[Math.floor(Math.random() * scoutTalent.length)];
 	do {
 		if ((ht === 'Barbed Tools(Slow)' || ht === 'Barbed Tools(Bleed)') && hs === 'Grappling Hook') {
-		let valid = false;
-		let hw = scoutWeapon[Math.floor(Math.random() * scoutWeapon.length)];
-		let hp = scoutPrimary[Math.floor(Math.random() * scoutPrimary.length)];
-		let hs = scoutSecondary[Math.floor(Math.random() * scoutSecondary.length)];
-		let ht = scoutTalent[Math.floor(Math.random() * scoutTalent.length)];
-		}
+		valid = false;
+		hw = scoutWeapon[Math.floor(Math.random() * scoutWeapon.length)];
+		hp = scoutPrimary[Math.floor(Math.random() * scoutPrimary.length)];
+		hs = scoutSecondary[Math.floor(Math.random() * scoutSecondary.length)];
+		ht = scoutTalent[Math.floor(Math.random() * scoutTalent.length)];
+	} else {
+		valid = true;
+	}
 	} while (valid === false);
 	alert(hw+' || '+hp+' || '+hs+' || '+ht);
 }
@@ -314,11 +336,14 @@ function prophetld() {
 	let ht = prophetTalent[Math.floor(Math.random() * prophetTalent.length)];
 	do {
 		if (ht === 'Empowering Curse' && hp === 'Hex Shot'){
-		let valid = false;
-		let hw = prophetWeapon[Math.floor(Math.random() * prophetWeapon.length)];
-		let hp = prophetPrimary[Math.floor(Math.random() * prophetPrimary.length)];
-		let hs = prophetSecondary[Math.floor(Math.random() * prophetSecondary.length)];
-		let ht = prophetTalent[Math.floor(Math.random() * prophetTalent.length)];
+		valid = false;
+		hw = prophetWeapon[Math.floor(Math.random() * prophetWeapon.length)];
+		hp = prophetPrimary[Math.floor(Math.random() * prophetPrimary.length)];
+		hs = prophetSecondary[Math.floor(Math.random() * prophetSecondary.length)];
+		ht = prophetTalent[Math.floor(Math.random() * prophetTalent.length)];
+		}
+		else {
+			valid = true;
 		}
 	} while (valid === false);
 	alert(hw+' || '+hp+' || '+hs+' || '+ht);
@@ -336,12 +361,14 @@ function vanguardld() {
 	let ht = vanguardTalent[Math.floor(Math.random() * vanguardTalent.length)];
 	do {
 		if (ht === 'Stout Shield' && hp === 'Judgement'){
-		let valid = false;
-		let hw = vanguardWeapon[Math.floor(Math.random() * vanguardWeapon.length)];
-		let hp = vanguardPrimary[Math.floor(Math.random() * vanguardPrimary.length)];
-		let hs = vanguardSecondary[Math.floor(Math.random() * vanguardSecondary.length)];
-		let ht = vanguardTalent[Math.floor(Math.random() * vanguardTalent.length)];
-		}
+		valid = false;
+		hw = vanguardWeapon[Math.floor(Math.random() * vanguardWeapon.length)];
+		hp = vanguardPrimary[Math.floor(Math.random() * vanguardPrimary.length)];
+		hs = vanguardSecondary[Math.floor(Math.random() * vanguardSecondary.length)];
+		ht = vanguardTalent[Math.floor(Math.random() * vanguardTalent.length)];
+	} else {
+		valid = false;
+	}
 	} while(valid === false);
 	alert(hw+' || '+hp+' || '+hs+' || '+ht);
 }
@@ -373,11 +400,11 @@ function reaverld() {
 	let vtal = reaverTalent[Math.floor(Math.random() * reaverTalent.length)];
 	do {
 		if ((vtal === 'Assassination' || vtal === 'Agility') && (vprim === 'Sweeping Kick')) {
-			let valid = false;
-			let vspec = reaverSpecial[Math.floor(Math.random() * reaverSpecial.length)];
-			let vprim = reaverPrimary[Math.floor(Math.random() * reaverPrimary.length)];
-			let vsec = reaverSecondary[Math.floor(Math.random() * reaverSecondary.length)];
-			let vtal = reaverTalent[Math.floor(Math.random() * reaverTalent.length)];
+			valid = false;
+			vspec = reaverSpecial[Math.floor(Math.random() * reaverSpecial.length)];
+			vprim = reaverPrimary[Math.floor(Math.random() * reaverPrimary.length)];
+			vsec = reaverSecondary[Math.floor(Math.random() * reaverSecondary.length)];
+			vtal = reaverTalent[Math.floor(Math.random() * reaverTalent.length)];
 			}
 		} while (valid === false);
 	alert(vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
@@ -408,12 +435,14 @@ function sentinelld() {
 	let vtal = sentinelTalent[Math.floor(Math.random() * sentinelTalent.length)];
 	 do {
 		if (vtal === 'Killing Spree' && vspec === 'Sonic Boom'){
-		let valid = false;
-		let vspec = sentinelSpecial[Math.floor(Math.random() * sentinelSpecial.length)];
-	 	let vprim = sentinelPrimary[Math.floor(Math.random() * sentinelPrimary.length)];
-	 	let vsec = sentinelSecondary[Math.floor(Math.random() * sentinelSecondary.length)];
-	 	let vtal = sentinelTalent[Math.floor(Math.random() * sentinelTalent.length)];
-		}
+		valid = false;
+		vspec = sentinelSpecial[Math.floor(Math.random() * sentinelSpecial.length)];
+	 	vprim = sentinelPrimary[Math.floor(Math.random() * sentinelPrimary.length)];
+	 	vsec = sentinelSecondary[Math.floor(Math.random() * sentinelSecondary.length)];
+	 	vtal = sentinelTalent[Math.floor(Math.random() * sentinelTalent.length)];
+	} else {
+		valid = true;
+	}
 	} while (valid === false);
 	alert(vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
   }
@@ -430,12 +459,14 @@ function deceiverld() {
 	let vtal = deceiverTalent[Math.floor(Math.random() * deceiverTalent.length)];
 		do {
 			if ((vtal === 'Split Personalities' && vsec !== 'Illusions') || (vtal == 'Virulent Strain' && vprim !== 'Infect')){
-			let valid = false;
-			let vspec = deceiverSpecial[Math.floor(Math.random() * deceiverSpecial.length)];
-			let vprim = deceiverPrimary[Math.floor(Math.random() * deceiverPrimary.length)];
-			let vsec = deceiverSecondary[Math.floor(Math.random() * deceiverSecondary.length)];
-			let vtal = deceiverTalent[Math.floor(Math.random() * deceiverTalent.length)];
-			}
+			valid = false;
+			vspec = deceiverSpecial[Math.floor(Math.random() * deceiverSpecial.length)];
+			vprim = deceiverPrimary[Math.floor(Math.random() * deceiverPrimary.length)];
+			vsec = deceiverSecondary[Math.floor(Math.random() * deceiverSecondary.length)];
+			vtal = deceiverTalent[Math.floor(Math.random() * deceiverTalent.length)];
+		} else {
+			valid = true;
+		}
 		} while (valid === false)
 	alert(vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
   }
