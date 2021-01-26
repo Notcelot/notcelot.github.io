@@ -351,7 +351,7 @@ function prophetld() {
 
 function vanguardld() {
 	let valid = true;
-	let vanguardWeapon = Array('Kama', 'Waraxe', 'Splitter Hatcher', 'Impaler Axe');
+	let vanguardWeapon = Array('Kama', 'Waraxe', 'Splitter Hatchet', 'Impaler Axe');
 	let vanguardPrimary = Array('Shield Bash', 'Shield Charge', 'Judgement');
 	let vanguardSecondary = Array('Bulwark', 'Rousing Cry');
 	let vanguardTalent = Array('Additional Arms', 'Indomitable', 'Resilient Presence', 'Strongarm', 'Tidal Blessing', 'Toughness', 'Spiked Shield', 'Stout Shield', 'Improved Landing', 'Improved Sprint');
@@ -367,7 +367,7 @@ function vanguardld() {
 		hs = vanguardSecondary[Math.floor(Math.random() * vanguardSecondary.length)];
 		ht = vanguardTalent[Math.floor(Math.random() * vanguardTalent.length)];
 	} else {
-		valid = false;
+		valid = true;
 	}
 	} while(valid === false);
 	alert(hw+' || '+hp+' || '+hs+' || '+ht);
@@ -405,8 +405,10 @@ function reaverld() {
 			vprim = reaverPrimary[Math.floor(Math.random() * reaverPrimary.length)];
 			vsec = reaverSecondary[Math.floor(Math.random() * reaverSecondary.length)];
 			vtal = reaverTalent[Math.floor(Math.random() * reaverTalent.length)];
-			}
-		} while (valid === false);
+	} else {
+		valid = true;
+	}
+	} while (valid === false);
 	alert(vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
 	}
 
@@ -421,7 +423,7 @@ function tyrantld() {
 	let vsec = tyrantSecondary[Math.floor(Math.random() * tyrantSecondary.length)];
 	let vtal= tyrantTalent[Math.floor(Math.random() * tyrantTalent.length)];
 	alert(vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
-  }
+	}
 
 function sentinelld() {
 	let valid = true;
