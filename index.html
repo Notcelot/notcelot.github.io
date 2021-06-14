@@ -16,6 +16,7 @@
 <button onclick="sentinelld()">Sentinel</button>
 <button onclick="deceiverld()">Deceiver</button>
 <button onclick="summonerld()">Summoner</button>
+<button onclick="rehabld()">Rahabim</button>	
 <script>
 
 function vld() {
@@ -114,7 +115,19 @@ function vld() {
 		let vsec = summonerSecondary[Math.floor(Math.random() * summonerSecondary.length)];
 		let vtal = summonerTalent[Math.floor(Math.random() * summonerTalent.length)];
 		alert(vcls + ' || '+ vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
-		}
+		
+	}else if (vcls === 'Rahabim') {
+    		let valid = true;
+    		let rehabSpecial = Array('Spit','Scald','Neuro-Toxin');
+    		let rehabPrimary = Array('Theft','Trigger','Overcharge');
+    		let rehabSecondary = Array('Stifle','Fake-Out');
+    		let rehabTalent = Array('Health Increase','Improved Executions','Improved Climbing','Kill Bounty-Speed','Improved Damage','Cooldown Reduction','Improved Regen','Attack Speed Increase');
+    		let vspec = rehabSpecial[Math.floor(Math.random() * rehabSpecial.length)];
+    		let vprim = rehabPrimary[Math.floor(Math.random() * rehabPrimary.length)];
+		let vsec = rehabSecondary[Math.floor(Math.random() * rehabSecondary.length)];
+		let vtal = rehabTalent[Math.floor(Math.random() * rehabTalent.length)];
+		alert(vcls + ' || '+ vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
+	}
 	}
 
 	function hld() {
@@ -485,7 +498,19 @@ function summonerld() {
 	let vtal = summonerTalent[Math.floor(Math.random() * summonerTalent.length)];
 	alert(vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
   }
-
+	
+function rehabld() {
+	let valid = true;
+	let rehabSpecial = Array('Spit','Scald','Neuro-Toxin');
+	let rehabPrimary = Array('Theft','Trigger','Overcharge');
+	let rehabSecondary = Array('Stifle','Fake-Out');
+	let rehabTalent = Array('Health Increase','Improved Executions','Improved Climbing','Kill Bounty-Speed','Improved Damage','Cooldown Reduction','Improved Regen','Attack Speed Increase');
+	let vspec = rehabSpecial[Math.floor(Math.random() * rehabSpecial.length)];
+	let vprim = rehabPrimary[Math.floor(Math.random() * rehabPrimary.length)];
+	let vsec = rehabSecondary[Math.floor(Math.random() * rehabSecondary.length)];
+	let vtal = rehabTalent[Math.floor(Math.random() * rehabTalent.length)];
+	alert(vcls + ' || '+ vspec + ' || ' + vprim + ' || ' + vsec + ' || ' + vtal);
+}
 </script>
 
 </body>
